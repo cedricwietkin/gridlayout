@@ -99,8 +99,9 @@
   }
 
 body{
-  background-image: url(images/images.png);
-  background-size: cover;
+  background-image: url(images/BeCode.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   }
 main{
   display: flex;
@@ -109,6 +110,7 @@ main{
   }
 .container {
   background-color: azure;
+  opacity: 90%;
   border-radius: 10px;
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
