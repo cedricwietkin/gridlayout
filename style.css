@@ -1,46 +1,110 @@
-
-body{
-    height: 1800px;
-}
-main{
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-}
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px ;
-    width: 100%;
-    margin: none;
-  }
-  .LienNavbar{
-      height: 100px;
-      width: 100px;
-  }
-  .burger-icon span {
-      display: none;
+.logo img {
+    width: 50px;
+    height: 50px;
   }
   
-  .menu-items {
+  .buttons {
     display: flex;
-    width: 100%;
-  }
-  .menu-items button{
-      height: 50px;
-      width: 100px;
+    justify-content: center;
   }
   
-  .menu-items li a {
+  .buttons a {
+    margin: 0 40px;
     text-decoration: none;
-    color: #000;
+    color: #333;
+  }
+  
+  .faq img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .faq a {
+    text-decoration: none;
+    color: #333;
+  }
+  /* Sidenav menu */
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: black;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+  .navbar {
+    display: none; /* Masquer la barre de navigation par défaut */
   }
 
-.sidenav{
-    display: none;
-}
-.container {
+  @media (min-width: 768px){
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #f2f2f2;
+      }
+      .sidenav{
+        display: none;
+      }
+      .burger-icon span{
+        display: none;
+      }
+    }
+    body{
+      height: 1800px;
+  }
+  main{
+      display: flex;
+      justify-content: center;
+      margin: 50px;
+  }
+  .container {
     background-color: azure;
     border-radius: 10px;
     display: grid;
@@ -85,149 +149,18 @@ i{
     background-color: red;
     opacity: 50%;
 }
-
 /* Media query pour les écrans de tablette */
 @media (max-width: 768px) {
-    .container {
-      grid-template-columns: 300px 300px;
-      grid-template-rows: 500px 500px 500px 500px;
-    }
+  .container {
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 500px 500px 500px 500px;
   }
-  /* Media query pour les écrans de smartphone */
+}
 @media (max-width: 480px) {
-    .container {
-      grid-template-columns: 300px;
-      grid-template-rows: 500px 500px 500px 500px 500px 500px 500px 500px;
-    }
+  .container {
+    grid-template-columns: 300px;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px 500px 500px;
   }
+}
   
-  /* Styles pour la barre de navigation desktop */
-  @media screen and (max-width: 768px) {
-   
-    /* Sidenav menu */
-    .sidenav {
-        height: 100%;
-        width: 250px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: -250px;
-        background-color: black;
-        padding-top: 60px;
-        transition: left 0.5s ease;
-      }
-      
-      /* Sidenav menu links */
-      .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: white;
-        display: block;
-        transition: 0.3s;
-      }
-      
-      .sidenav a:hover {
-        color: #111;
-      }
-      
-      .sidenav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-      
-      /* Active class */
-      .sidenav.active {
-        left: 0;
-      }
-      
-      /* Close btn */
-      .sidenav .close {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-      }
-      
-      /* Icône burger */
-      .burger-icon span {
-        display: block;
-        width: 35px;
-        height: 5px;
-        background-color: black;
-        margin: 6px 0;
-      }
-      nav{
-        display: flex;
-        width: 100%;
-        height: 100px;
-      }
-      .navbar {
-        display: none; /* Masquer la barre de navigation par défaut */
-      }
-      }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
