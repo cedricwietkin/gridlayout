@@ -124,8 +124,7 @@ main{
   justify-content: space-around;
   height: 400px;
   width: 200px;
-  border: 1px solid gray ;
-  background-color:floralwhite;
+  background-color: white;
   border-radius: 10px;
 }
 
@@ -133,6 +132,11 @@ main{
   font-family: 'poppins';
   font-style: italic;
   font-size: 12px;
+  margin: 10px;
+}
+.text ul{
+  padding-left: 0px;
+  list-style: none ;
 }
 
 .titre{
