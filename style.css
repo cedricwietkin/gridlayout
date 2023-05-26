@@ -11,7 +11,7 @@
 .buttons a {
     margin: 0 40px;
     text-decoration: none;
-    color: #333;
+    color: rgb(56, 137, 148);
   }
   
 .faq img {
@@ -140,6 +140,10 @@ main{
 .text ul{
   padding-left: 0px;
   list-style: none ;
+}
+
+.text li{
+  margin-top:5px
 }
 
 .titre{
