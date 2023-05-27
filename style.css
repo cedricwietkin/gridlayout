@@ -1,3 +1,11 @@
+header{
+  background-color: white;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  padding-top: 0;
+  z-index: 9999;
+}
 .logo img {
     width: 50px;
     height: 50px;
@@ -86,7 +94,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0px;
     background-color: #f2f2f2;
     }
 
@@ -102,11 +110,16 @@ body{
   background-image: url(images/BeCode.png);
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: 0;
+ 
   }
 main{
   display: flex;
   justify-content: center;
-  margin: 50px;
+  margin: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
+  z-index: 1;
   }
 .container {
   background-color: azure;
